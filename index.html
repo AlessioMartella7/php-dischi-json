@@ -23,15 +23,18 @@
 <body>
     <div id="app">
         <header class="bg-mainBlue"></header>
-        <main class="bg-secondaryBlue">
+        <main class="bg-tertiaryBlue">
             <div class="container">
-                <div class="row pt-5">
-                    <div class="col-4" v-for="(disc,index) in discList" :key="index">
-                        <div class="card" style="width: 18rem;">
-                            <img :src="disc.poster" class="card-img-top" :alt="disc.author">
+                <div class="row py-5">
+                    <div class="col-4 lh-1 mb-5 " v-for="(disc,index) in discList" :key="index">
+                        <div class="card h-100 bg-secondaryBlue" style="width: 25rem;">
+                            <img :src="disc.poster" class="card-img-top img-fluid p-4" :alt="disc.author">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <div class="card-text text-center text-white">
+                                    <h3>{{disc.title}}</h3>
+                                    <p>{{disc.author}}</p>
+                                    <p class="fs-5 fw-bold">{{disc.year}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

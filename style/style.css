@@ -1,0 +1,15 @@
+.bg-mainBlue {
+    background-color: #05131E;
+} 
+.bg-secondaryBlue {
+    background-color: #10202F;
+}
+
+.bg-tertiaryBlue {
+    background-color: #1D2D3C;
+}
+
+header {
+    height: 100px;
+}
+   
